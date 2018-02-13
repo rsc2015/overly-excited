@@ -2,10 +2,11 @@ console.log("excited.js");
 
 // Create an array that contains the words in the sentence
 let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
-let sentence1 = " ";
+
 
 
 function addExcitement(theWordArray) {
+    let sentence1 = " ";
 for (let i = 0; i < sentence.length; i++) {
     sentence1 += sentence[i] + " ";
     console.log(sentence1);  
@@ -13,9 +14,10 @@ for (let i = 0; i < sentence.length; i++) {
 }
 addExcitement(sentence);
 
-let sentence2 = " ";
+
 
     function addExclamation(theWordArray) {
+        let sentence2 = " ";
         for (let i = 0; i < sentence.length; i++) {
             sentence2 += sentence[i] + " ";
             //console.log(sentence2);
@@ -32,18 +34,18 @@ let sentence2 = " ";
     addExclamation(sentence);
 
 
-    let sentence3 = " ";
 
     function addMoreExclamation(theWordArray, punctuation) {
+        let sentence3 = " ";
         for (let i = 0; i < sentence.length; i++) {
-            sentence3+=sentence[i] + " ";
+            sentence3 += sentence[i] + " ";
             //console.log(sentence2);
             var pos = i + 1;
             if (pos % 3 === 0) { 
                //console.log(sentence2);
                var pos = pos/3;
                var exlam = punctuation;
-                sentence3 += exlam.repeat(pos);
+                sentence3 += exlam.repeat(pos) + " ";
                 console.log(sentence3);
             }
             
@@ -51,6 +53,9 @@ let sentence2 = " ";
         }
 
     addMoreExclamation(sentence, "!");
+    
+   //// I want to use a question mark instead of exclamation
+    addMoreExclamation(sentence, "?");
 
 
 /*The addExcitement function should be an impure function, and accept
