@@ -11,23 +11,8 @@ for (let i = 0; i < sentence.length; i++) {
     console.log(sentence1);  
   }  
 }
-addExcitement(sentence);
 
 let sentence2 = " ";
-
-/*function addExclamation(theWordArray) {
-    for (let i = 0; i < sentence.length; i++) {
-        sentence2 += sentence[i] + " ";
-        //console.log(sentence2);
-        if ((sentence2[i] % 3) === 0) {
-            sentence2 += sentence[i]  + "!";
-            console.log(sentence2);
-        }else {
-            console.log(sentence2)
-        }
-      }  
-}*/
-
 
     function addExclamation(theWordArray) {
         for (let i = 0; i < sentence.length; i++) {
@@ -44,14 +29,9 @@ let sentence2 = " ";
         }
 
     addExclamation(sentence);
-/*i = sentence.length;
-if (sentence[i]%3 === 0) {
-    sentence1 = sentence1 + "!";
-    console.log(sentence1);
-}else {console.log(sentence1)
-}
 
-    The addExcitement function should be an impure function, and accept
+
+/*The addExcitement function should be an impure function, and accept
     the array as the sole argument. It should iterate over the array
     and output the words to the browser console.
 -------------------------------------------
@@ -80,12 +60,6 @@ const updateDOM = function (message) {
 
 // Invoke the function and pass in the array
 addExcitement(sentence);*/
-
-
-
-
-
-
 
 /*var str = ["a", "b", "c", "d", "e", "f"];
 var str1 = "";
