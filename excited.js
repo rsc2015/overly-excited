@@ -11,16 +11,17 @@ for (let i = 0; i < sentence.length; i++) {
     console.log(sentence1);  
   }  
 }
+addExcitement(sentence);
 
 let sentence2 = " ";
 
     function addExclamation(theWordArray) {
         for (let i = 0; i < sentence.length; i++) {
             sentence2 += sentence[i] + " ";
-            console.log(sentence2);
+            //console.log(sentence2);
             var pos = i + 1;
             if (pos % 3 === 0) {
-                sentence2 += "!";
+                sentence2 += "!" + " ";
                 console.log(sentence2);
             }else {
                 console.log(sentence2)
