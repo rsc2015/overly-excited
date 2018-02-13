@@ -4,7 +4,6 @@ console.log("excited.js");
 let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
 
-
 function addExcitement(theWordArray) {
     let sentence1 = " ";
 for (let i = 0; i < sentence.length; i++) {
@@ -15,9 +14,8 @@ for (let i = 0; i < sentence.length; i++) {
 addExcitement(sentence);
 
 
-
-    function addExclamation(theWordArray) {
-        let sentence2 = " ";
+function addExclamation(theWordArray) {
+    let sentence2 = " ";
         for (let i = 0; i < sentence.length; i++) {
             sentence2 += sentence[i] + " ";
             //console.log(sentence2);
@@ -31,7 +29,8 @@ addExcitement(sentence);
           }  
         }
 
-    addExclamation(sentence);
+addExclamation(sentence);
+
 
 
 
@@ -57,7 +56,28 @@ addExcitement(sentence);
    //// I want to use a question mark instead of exclamation
     addMoreExclamation(sentence, "?");
 
+    
+// Complete this arrow function template to make your
+// function work with it.
 
+let betterSentence = ["I", "am", "finally", "excited", "to", "complete", "overly", "excited", "excercise"];
+let addMoreAmpersand  = (newSentence, ampersand) => {
+    let sentence4 = " ";
+        for (let i = 0; i < betterSentence.length; i++) {
+            sentence4 += betterSentence[i] + " ";
+            //console.log(sentence4);
+            var pos = i + 1;
+            if (pos % 3 === 0) { 
+               //console.log(sentence4);
+               var pos = pos/3;
+               var add = ampersand;
+                sentence4 += add.repeat(pos) + " ";
+                console.log(sentence4);
+            }
+          }  
+ };
+
+ addMoreAmpersand(betterSentence, "&");
 /*The addExcitement function should be an impure function, and accept
     the array as the sole argument. It should iterate over the array
     and output the words to the browser console.
