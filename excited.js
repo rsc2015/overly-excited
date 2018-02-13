@@ -32,6 +32,27 @@ let sentence2 = " ";
     addExclamation(sentence);
 
 
+    let sentence3 = " ";
+
+    function addMoreExclamation(theWordArray, punctuation) {
+        for (let i = 0; i < sentence.length; i++) {
+            sentence3+=sentence[i] + " ";
+            //console.log(sentence2);
+            var pos = i + 1;
+            if (pos % 3 === 0) { 
+               //console.log(sentence2);
+               var pos = pos/3;
+               var exlam = punctuation;
+                sentence3 += exlam.repeat(pos);
+                console.log(sentence3);
+            }
+            
+          }  
+        }
+
+    addMoreExclamation(sentence, "!");
+
+
 /*The addExcitement function should be an impure function, and accept
     the array as the sole argument. It should iterate over the array
     and output the words to the browser console.
